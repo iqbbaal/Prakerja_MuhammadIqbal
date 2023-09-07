@@ -1,0 +1,47 @@
+void main(){
+	
+	KelilingPersegi(4);
+	KelilingPersegiPanjang(10,15);
+	KelilingLingkaran(30);
+	Flutter();
+}
+
+void KelilingPersegi(double sisi){
+	double Keliling = (sisi)*4;
+	Repeat();
+	print('Keliling Persegi');
+	print('Sisi = $sisi');
+	print('Keliling Persegi = $Keliling');
+}
+void KelilingPersegiPanjang(double lebar, double panjang){
+	double Keliling = (lebar)*2 + (panjang*2);
+
+	Repeat();
+	print('Keliling Persegi Panjang');
+	print('Lebar = $lebar \nPanjang = $panjang');
+	print('Keliling Persegi Panjang  = $Keliling');
+}
+void KelilingLingkaran(double jari){
+	double pi = 22/7;
+	double Keliling = 2 * pi * jari;
+	
+	Repeat();
+	print('Keliling Lingkaran');
+	print('Jari Jari = $jari \nPI = $pi');
+	print('Keliling Lingkaran = $Keliling');
+}
+void Flutter(){
+	Repeat();
+	print('''
+- flutter run => menjalangkan aplikasi fluter
+- flutter create => membuat project baru flutter
+- flutter clean => membersihkan cache
+- flutter build => membuat projek flutter menjadi aplikasi android, ios, web atau linu
+- flutter pub get => menginstall package
+- flutter channel => cek versi channel flutter yang digunakan stable, beta, main, master
+- flutter doctor => menampilkan alat alat atau tools yang dibutuhkan oleh flutter.
+	''');
+}	
+void Repeat(){
+	print('=' * 40);
+}
